@@ -31,7 +31,7 @@ public class User {
         return firstName;
     }
 
-    public void setfname(String firstName) {
+    public void setfirstName(String firstName) {
         this.firstName = firstName;
     }
 
@@ -40,7 +40,7 @@ public class User {
     }
 
     
-    public void getlastName(String lastName) {
+    public void setlastName(String lastName) {
         this.lastName = lastName;
     }
 
@@ -55,7 +55,7 @@ public class User {
     // overriding toString method
     @Override
     public String toString(){
-        return "Username: " + username + ". First Name: " + firstName + ". Last Name: " + lastName + ". Date Of Birth: " + dateOfBirth;
+        return "Username: " + (username != null ? username : "Not in system") + ". First Name: " + (firstName != null ? firstName : "Unknown")  + ". Last Name: " + Objects.toString(lastName, "Unknown")  + ". Date Of Birth: " + (dateOfBirth != null ? dateOfBirth : "Unknown") ;
     }
 
     // overriding the equals method so that it returns the right boolean value when two similar objects of type User are compared
