@@ -1,2 +1,3 @@
 .vscode/
-*.class
+# ignore all bin classes from here on
+bin/
