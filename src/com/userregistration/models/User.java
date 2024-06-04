@@ -1,4 +1,4 @@
-package com.example.userregistration.model;
+package com.userregistration.models;
 
 import java.time.LocalDate;
 import java.util.Objects;
